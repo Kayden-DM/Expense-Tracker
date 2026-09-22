@@ -1,4 +1,4 @@
-Simple expense tracker that lets you write down waht you buy.
+Simple expense tracker that lets you write down what you buy.
 
 Features:
 Classes
