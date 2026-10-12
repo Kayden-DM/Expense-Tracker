@@ -1,4 +1,5 @@
-)
+This README is made with AI
+
 💸 Python Expense Tracker
 A simple command-line expense tracking application built with Python. This program lets users add expenses, view all recorded expenses, and calculate the total amount spent. It's a great beginner project for learning about object-oriented programming (OOP), classes, lists, and menu-driven programs in Python.
 
