@@ -1,24 +1,40 @@
-Expense Tracker
-A command-line Python program that lets a user add expenses, view them, and calculate the total spent.
+## Expense Tracker
+A command-line expense tracker written in Python. It uses an Expense class to store a name, amount, and category for each entry, and runs an interactive menu loop for adding, viewing, and totalling expenses.
 
-Concepts Used
-Classes & Objects — an Expense class stores each expense's name, amount, and category.
+## Features
+Add Expense — Prompts for a name, amount, and category, then stores the expense in a list.
 
-Lists of Objects — the expense list holds every Expense instance added.
+View Expenses — Prints every recorded expense with its name, amount, and category.
 
-While Loop Menu — a looping menu lets the user pick actions until they exit.
+Show Total — Adds up the amount of every expense and prints the total.
 
-Features
-Add Expenses — record a name, amount, and category for each expense.
+Menu Loop — Runs until the user selects option 4 to exit.
 
-View Expenses — list all stored expenses with their details.
+Exit — Breaks out of the loop cleanly when option 4 is chosen.
 
-Total Spending — sum up all expense amounts with a running total.
+## Technologies Used
+text
+| Technology | Purpose |
+|---|---|
+| Python | Application logic |
+| Class (`Expense`) | Encapsulates name, amount, and category |
+| List (`expense`) | Stores all recorded expenses |
+| `input()` / `print()` | Console interaction |
+| `float()` | Parses expense amounts |
+| `while True` loop | Keeps the menu running until exit |
+<!-- -->
+## How to Use It
+Install Python 3.6 or newer from python.org and make sure it's added to your PATH.
 
-Improvements
-Input Validation — wrap the float() amount in try/except (invalid input currently crashes the program).
+Save the code as expense_tracker.py.
 
-Category Filtering & Totals — allow viewing or summing expenses by category.
+Open a terminal in the folder containing the file.
 
-Persistent Storage — save expenses to a file so data isn't lost when the program closes.
+Run python expense_tracker.py.
 
+Use the menu: 1 to add an expense, 2 to view all expenses, 3 to show the total, 4 to exit.
+
+## Improvements
+Validate amounts — float(input(...)) will crash on non-numeric input; wrap it in a try/except ValueError loop like the other projects so the user is re-prompted.
+
+Persist the expenses — Save the list to a JSON file on exit and reload it on startup so expenses survive between sessions.
