@@ -13,7 +13,6 @@ Menu Loop — Runs until the user selects option 4 to exit.
 Exit — Breaks out of the loop cleanly when option 4 is chosen.
 
 ## Technologies Used
-text
 | Technology | Purpose |
 |---|---|
 | Python | Application logic |
